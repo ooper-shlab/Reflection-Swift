@@ -184,12 +184,12 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
             if indexPath.row == 0 {
                 cell!.textLabel!.text = "Size"
                 slider.value = Float(kDefaultReflectionFraction)
-                slider.addTarget(self, action: "sizeSlideAction:", forControlEvents: .ValueChanged)
+                slider.addTarget(self, action: #selector(MyViewController.sizeSlideAction(_:)), forControlEvents: .ValueChanged)
                 cell!.detailTextLabel!.text = String(format: "%0.2f", Double(slider.value))
             } else {
                 cell!.textLabel!.text = "Alpha"
                 slider.value = Float(kDefaultReflectionOpacity)
-                slider.addTarget(self, action: "alphaSlideAction:", forControlEvents: .ValueChanged)
+                slider.addTarget(self, action: #selector(MyViewController.alphaSlideAction(_:)), forControlEvents: .ValueChanged)
                 cell!.detailTextLabel!.text = String(format: "%0.2f", Double(slider.value))
             }
         }
