@@ -13,7 +13,7 @@ You should not contact to Apple or SHLab(jp) about any faults caused by my trans
 
 ## Build Requirements
 
-Xcode 8.3.3, iOS 10 SDK
+Xcode 10.2, iOS 12.2 SDK
 
 
 ## Runtime Requirements

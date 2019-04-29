@@ -39,7 +39,7 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         self.slidersTableView.register(SliderCell.self, forCellReuseIdentifier: kCellID)
         
-        self.slidersTableView.backgroundColor = UIColor.white
+        self.slidersTableView.backgroundColor = .white
         
         self.view.autoresizesSubviews = true
         self.view.isUserInteractionEnabled = true
@@ -106,7 +106,7 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         // draw the gradient into the gray bitmap context
         gradientBitmapContext?.drawLinearGradient(grayScaleGradient!, start: gradientStartPoint,
-            end: gradientEndPoint,  options: CGGradientDrawingOptions.drawsAfterEndLocation)
+            end: gradientEndPoint,  options: .drawsAfterEndLocation)
         
         // convert the context into a CGImageRef and release the context
         theCGImage = gradientBitmapContext?.makeImage()

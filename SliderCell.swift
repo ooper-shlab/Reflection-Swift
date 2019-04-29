@@ -20,13 +20,13 @@ let kSliderTag = 1337
 @objc(SliderCell)
 class SliderCell: UITableViewCell {
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .value1, reuseIdentifier: reuseIdentifier)
         // Label for type of slider
-        self.textLabel!.backgroundColor = UIColor.clear
-        self.textLabel!.font = UIFont.boldSystemFont(ofSize: 14.0)
-        self.textLabel!.textColor = UIColor.black
-        self.selectionStyle = UITableViewCellSelectionStyle.none
+        self.textLabel!.backgroundColor = .clear
+        self.textLabel!.font = .boldSystemFont(ofSize: 14.0)
+        self.textLabel!.textColor = .black
+        self.selectionStyle = .none
         
         // Slider
         let slider =
@@ -37,9 +37,9 @@ class SliderCell: UITableViewCell {
         self.contentView.addSubview(slider)
         
         // Label for slider values
-        self.detailTextLabel!.backgroundColor = UIColor.clear
-        self.detailTextLabel!.font = UIFont.boldSystemFont(ofSize: 12.0)
-        self.detailTextLabel!.textColor = UIColor.black
+        self.detailTextLabel!.backgroundColor = .clear
+        self.detailTextLabel!.font = .boldSystemFont(ofSize: 12.0)
+        self.detailTextLabel!.textColor = .black
     }
     
     required init?(coder aDecoder: NSCoder) {
